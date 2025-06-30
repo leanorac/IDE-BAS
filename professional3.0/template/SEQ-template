@@ -1,0 +1,26 @@
+@startuml
+autonumber "<b><color:DarkSlateBlue>.</color></b> " 
+
+actor User as "Менеджер"
+participant Browser as "Browser"
+participant "Web Server" as WebServer
+participant "Application Server" as AppServer
+participant "Database Server" as DBServer
+
+== Пользователь запрашивает страницу ==
+User -> Browser : Открывает URL
+Browser -> WebServer : HTTP GET /index.html
+
+== Веб-сервер перенаправляет на APP-слой ==
+WebServer -> AppServer : REST (Request: /loadData)
+
+== APP-слой общается с БД ==
+AppServer -> DBServer : JDBC: SELECT * FROM Products
+DBServer --> AppServer : JDBC: [rows of data]
+
+== Ответ возвращается обратно ==
+AppServer --> WebServer : REST (Response: данные)
+WebServer --> Browser : HTTP 200 OK (HTML + JS)
+Browser --> User : Отображает результат
+
+@enduml
