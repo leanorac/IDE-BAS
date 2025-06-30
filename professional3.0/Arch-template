@@ -1,0 +1,59 @@
+Пример1
+
+@startuml
+skinparam dpi 150
+left to right direction
+skinparam componentStyle rectangle
+
+actor Manager as M
+
+node "Browser" as BrowserNode {
+  [Adobe Flash]
+}
+
+node "Web Server" as WebServerNode {
+  [Apache]
+  [mod_jk]
+}
+
+node "Application Server" as AppServerNode {
+  [Tomcat]
+  [Servlet Application]
+}
+
+node "Database Server" as DBServerNode {
+  [MySQL]
+}
+
+' Связи между узлами
+M --> BrowserNode        : открывает URL
+BrowserNode --> WebServerNode : HTTP(S)
+WebServerNode --> AppServerNode : AJP
+AppServerNode --> DBServerNode  : JDBC
+
+@enduml
+
+
+Пример2
+@startuml
+left to right direction
+skinparam linetype ortho
+
+node "Клиентские устройства" as devices {
+  artifact "Веб-браузер" as browser
+  artifact "Мобильное приложение" as mobile
+}
+
+node "Сервер приложений" as back2 {
+  artifact "Backend (Node.js)" as backend
+}
+
+node "Сервер БД" as db {
+  artifact "PostgreSQL"
+}
+
+devices --> back2 : "API"
+backend --> db : "SQL"
+
+@enduml
+
