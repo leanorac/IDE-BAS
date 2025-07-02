@@ -1,0 +1,43 @@
+@startuml
+autonumber "<b><color:DarkSlateBlue>.</color></b> " 
+
+actor HR_Specialist as "HR-специалист"
+participant HR_Portal as "HR Portal"
+participant Resume_Service as "Resume Service"
+participant AI_Analysis_Service as "AI Analysis Service"
+participant Database as "Database"
+participant Notification_Service as "Notification Service"
+
+== Инициация процесса автоматического отбора ==
+HR_Specialist -> HR_Portal : Запускает автоматический отбор резюме
+HR_Portal -> HR_Specialist : Запрашивает критерии отбора
+HR_Specialist -> HR_Portal : Указывает критерии (должность, навыки, опыт)
+HR_Portal -> Resume_Service : Передает критерии отбора
+
+== Получение и фильтрация резюме ==
+Resume_Service -> Database : Запрос резюме по базовым критериям
+Database --> Resume_Service : Возвращает список резюме
+Resume_Service -> Resume_Service : Предварительная фильтрация резюме
+Resume_Service -> AI_Analysis_Service : Передает отфильтрованные резюме
+
+== AI анализ и оценка резюме ==
+AI_Analysis_Service -> AI_Analysis_Service : Анализирует навыки и опыт
+AI_Analysis_Service -> AI_Analysis_Service : Сопоставляет с требованиями вакансии
+AI_Analysis_Service -> AI_Analysis_Service : Присваивает рейтинг каждому резюме
+AI_Analysis_Service --> Resume_Service : Возвращает проанализированные резюме с рейтингами
+
+== Формирование результатов отбора ==
+Resume_Service -> Resume_Service : Ранжирует кандидатов по рейтингу
+Resume_Service -> Database : Сохраняет результаты анализа
+Database --> Resume_Service : Подтверждает сохранение
+Resume_Service -> Notification_Service : Передает результаты для уведомления
+
+== Уведомление HR-специалиста о результатах ==
+Notification_Service -> HR_Portal : Отправляет уведомление о завершении
+HR_Portal -> HR_Specialist : Уведомляет о готовности результатов
+HR_Specialist -> HR_Portal : Запрашивает результаты отбора
+HR_Portal -> Resume_Service : Запрос списка лучших кандидатов
+Resume_Service --> HR_Portal : Возвращает ранжированный список кандидатов
+HR_Portal --> HR_Specialist : Отображает результаты отбора
+
+@enduml

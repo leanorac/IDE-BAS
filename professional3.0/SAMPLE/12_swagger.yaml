@@ -1,0 +1,299 @@
+openapi: 3.0.0
+info:
+  title: HR Resume Screener API
+  description: API для автоматического анализа и отбора резюме кандидатов
+  version: 1.0.0
+servers:
+  - url: http://hr-service.example.com/api/v1
+    description: Production Server
+
+paths:
+  /candidates/{candidate_id}:
+    get:
+      summary: Получение информации о кандидате
+      description: Возвращает полную информацию о кандидате по его ID
+      parameters:
+        - name: candidate_id
+          in: path
+          required: true
+          description: Уникальный идентификатор кандидата
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Информация о кандидате
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Candidate"
+        '404':
+          description: Кандидат не найден
+
+  /candidates/{candidate_id}/resumes:
+    get:
+      summary: Получение резюме кандидата
+      description: Возвращает список резюме кандидата
+      parameters:
+        - name: candidate_id
+          in: path
+          required: true
+          description: Уникальный идентификатор кандидата
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Список резюме кандидата
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Resume"
+
+  /vacancies/{vacancy_id}/analyze:
+    post:
+      summary: Анализ соответствия резюме вакансии
+      description: Запускает анализ соответствия указанного резюме требованиям вакансии
+      parameters:
+        - name: vacancy_id
+          in: path
+          required: true
+          description: Уникальный идентификатор вакансии
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AnalysisRequest"
+      responses:
+        '200':
+          description: Результаты анализа
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AnalysisResult"
+        '400':
+          description: Неверные параметры запроса
+
+  /vacancies:
+    post:
+      summary: Создание новой вакансии
+      description: Создает новую вакансию с указанными параметрами
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VacancyCreateRequest"
+      responses:
+        '201':
+          description: Вакансия успешно создана
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Vacancy"
+        '400':
+          description: Неверные параметры запроса
+
+  /analysis/{analysis_id}:
+    get:
+      summary: Получение результатов анализа
+      description: Возвращает детальные результаты анализа соответствия
+      parameters:
+        - name: analysis_id
+          in: path
+          required: true
+          description: Уникальный идентификатор анализа
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Результаты анализа
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AnalysisResult"
+        '404':
+          description: Анализ не найден
+
+components:
+  schemas:
+    Candidate:
+      type: object
+      properties:
+        candidate_id:
+          type: integer
+          example: 123
+          description: Уникальный идентификатор кандидата
+        first_name:
+          type: string
+          example: "Иван"
+          description: Имя кандидата
+        last_name:
+          type: string
+          example: "Петров"
+          description: Фамилия кандидата
+        email:
+          type: string
+          example: "ivan.petrov@example.com"
+          description: Электронная почта
+        phone:
+          type: string
+          example: "+79001234567"
+          description: Контактный телефон
+        created_at:
+          type: string
+          format: date-time
+          example: "2023-01-15T10:00:00Z"
+          description: Дата создания записи
+
+    Resume:
+      type: object
+      properties:
+        resume_id:
+          type: integer
+          example: 456
+          description: Уникальный идентификатор резюме
+        title:
+          type: string
+          example: "Senior Java Developer"
+          description: Заголовок резюме
+        summary:
+          type: string
+          example: "Опытный разработчик с 10-летним стажем"
+          description: Краткое описание
+        file_path:
+          type: string
+          example: "/resumes/456.pdf"
+          description: Путь к файлу резюме
+        uploaded_at:
+          type: string
+          format: date-time
+          example: "2023-02-20T14:30:00Z"
+          description: Дата загрузки
+
+    AnalysisRequest:
+      type: object
+      required:
+        - resume_id
+      properties:
+        resume_id:
+          type: integer
+          example: 456
+          description: ID анализируемого резюме
+        analyze_skills:
+          type: boolean
+          default: true
+          description: Анализировать навыки
+        analyze_experience:
+          type: boolean
+          default: true
+          description: Анализировать опыт работы
+
+    AnalysisResult:
+      type: object
+      properties:
+        analysis_id:
+          type: integer
+          example: 789
+          description: Уникальный идентификатор анализа
+        match_score:
+          type: number
+          format: float
+          example: 85.5
+          description: Процент соответствия (0-100)
+        strengths:
+          type: array
+          items:
+            type: string
+          example: ["Опыт работы 10+ лет", "Знание Spring Framework"]
+          description: Сильные стороны кандидата
+        weaknesses:
+          type: array
+          items:
+            type: string
+          example: ["Отсутствие опыта с Kubernetes"]
+          description: Слабые стороны кандидата
+        recommendations:
+          type: array
+          items:
+            type: string
+          example: ["Рекомендуем собеседование", "Проверить знание Docker"]
+          description: Рекомендации по кандидату
+        analyzed_at:
+          type: string
+          format: date-time
+          example: "2023-03-01T16:45:00Z"
+          description: Дата и время проведения анализа
+
+    VacancyCreateRequest:
+      type: object
+      required:
+        - title
+        - description
+      properties:
+        title:
+          type: string
+          example: "Java Developer"
+          description: Название вакансии
+        description:
+          type: string
+          example: "Требуется опытный Java-разработчик"
+          description: Описание вакансии
+        department:
+          type: string
+          example: "Разработка"
+          description: Отдел/подразделение
+        requirements:
+          type: array
+          items:
+            $ref: "#/components/schemas/Requirement"
+
+    Requirement:
+      type: object
+      required:
+        - skill_name
+      properties:
+        skill_name:
+          type: string
+          example: "Java"
+          description: Название навыка
+        min_level:
+          type: string
+          example: "Senior"
+          description: Минимальный уровень
+        min_experience_years:
+          type: integer
+          example: 5
+          description: Требуемый опыт (лет)
+
+    Vacancy:
+      type: object
+      properties:
+        vacancy_id:
+          type: integer
+          example: 101
+          description: Уникальный идентификатор вакансии
+        title:
+          type: string
+          example: "Java Developer"
+          description: Название вакансии
+        description:
+          type: string
+          description: Описание вакансии
+        department:
+          type: string
+          example: "Разработка"
+          description: Отдел/подразделение
+        status:
+          type: string
+          enum: [open, closed, on_hold]
+          default: open
+          description: Статус вакансии
+        created_at:
+          type: string
+          format: date-time
+          example: "2023-01-10T09:15:00Z"
+          description: Дата создания
