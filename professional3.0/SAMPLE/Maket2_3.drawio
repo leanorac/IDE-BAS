@@ -1,0 +1,208 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0">
+  <diagram name="Страница 1" id="0">
+    <mxGraphModel dx="7487" dy="3140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="main" value="" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="100" width="800" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="main_header" value="&lt;div style=&quot;font-size:18px;padding:10px&quot;&gt;&lt;b&gt;HR Resume Screener&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" parent="main" vertex="1">
+          <mxGeometry y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="main_nav" value="&lt;div style=&quot;padding:15px;background:#f8f9fa;height:100%&quot;&gt;&lt;b&gt;Навигация&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Дашборд&lt;br&gt;• Кандидаты&lt;br&gt;• Вакансии&lt;br&gt;• Аналитика&lt;/div&gt;" style="text;html=1;strokeColor=#ddd;fillColor=#f8f9fa;align=left;verticalAlign=top;" parent="main" vertex="1">
+          <mxGeometry y="80" width="200" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="main_content" value="&lt;div style=&quot;padding:20px&quot;&gt;Основная рабочая область&lt;br&gt;(дашборд или список кандидатов)&lt;/div&gt;" style="shape=rect;strokeColor=#ddd;fillColor=#ffffff;align=left;verticalAlign=top;" parent="main" vertex="1">
+          <mxGeometry x="200" y="80" width="600" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="main_status" value="&lt;div style=&quot;padding:8px 15px;background:#e9ecef&quot;&gt;Статус: 124 кандидата, 5 активных вакансий&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#e9ecef;align=left;verticalAlign=middle;" parent="main" vertex="1">
+          <mxGeometry y="550" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="candidates" value="" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="750" width="800" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="candidates_header" value="&lt;div style=&quot;font-size:16px;padding:10px&quot;&gt;&lt;b&gt;Кандидаты&lt;/b&gt; | &lt;input type=&quot;text&quot; placeholder=&quot;Поиск...&quot; style=&quot;width:200px&quot;&gt; &lt;button&gt;🔍&lt;/button&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" parent="candidates" vertex="1">
+          <mxGeometry y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="candidates_table" value="&lt;table style=&#39;width:100%;border-collapse:collapse;font-size:14px&#39;&gt;           &lt;tr style=&#39;background:#f8f9fa&#39;&gt;&lt;th style=&#39;padding:10px;text-align:left;border-bottom:1px solid #ddd&#39;&gt;Имя&lt;/th&gt;&lt;th style=&#39;padding:10px;text-align:left;border-bottom:1px solid #ddd&#39;&gt;Email&lt;/th&gt;&lt;th style=&#39;padding:10px;text-align:left;border-bottom:1px solid #ddd&#39;&gt;Телефон&lt;/th&gt;&lt;/tr&gt;           &lt;tr&gt;&lt;td style=&#39;padding:10px;border-bottom:1px solid #eee&#39;&gt;Иван Петров&lt;/td&gt;&lt;td style=&#39;padding:10px;border-bottom:1px solid #eee&#39;&gt;ivan@mail.com&lt;/td&gt;&lt;td style=&#39;padding:10px;border-bottom:1px solid #eee&#39;&gt;+790012345&lt;/td&gt;&lt;/tr&gt;           &lt;tr&gt;&lt;td style=&#39;padding:10px;border-bottom:1px solid #eee&#39;&gt;...&lt;/td&gt;&lt;td style=&#39;padding:10px;border-bottom:1px solid #eee&#39;&gt;...&lt;/td&gt;&lt;td style=&#39;padding:10px;border-bottom:1px solid #eee&#39;&gt;...&lt;/td&gt;&lt;/tr&gt;           &lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;" parent="candidates" vertex="1">
+          <mxGeometry y="80" width="800" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="candidates_actions" value="&lt;div style=&quot;padding:15px;text-align:center&quot;&gt;           &lt;button style=&quot;margin-right:10px&quot;&gt;Добавить кандидата&lt;/button&gt;           &lt;button&gt;Импорт из CSV&lt;/button&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f8f9fa;align=center;verticalAlign=middle;" parent="candidates" vertex="1">
+          <mxGeometry y="500" width="800" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="resume" value="" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="750" width="800" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="resume_header" value="&lt;div style=&quot;font-size:16px;padding:10px&quot;&gt;&lt;b&gt;Резюме: Иван Петров (Senior Java Developer)&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" parent="resume" vertex="1">
+          <mxGeometry y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="resume_photo" value="&lt;div style=&#39;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#f8f9fa&#39;&gt;Фото/аватар&lt;/div&gt;" style="shape=rect;strokeColor=#ddd;fillColor=#f8f9fa;align=center;verticalAlign=middle;" parent="resume" vertex="1">
+          <mxGeometry y="80" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="resume_info" value="&lt;div style=&#39;padding:20px&#39;&gt;           &lt;b&gt;Основная информация:&lt;/b&gt;&lt;br&gt;&lt;br&gt;           • Опыт: &lt;b&gt;5 лет&lt;/b&gt;&lt;br&gt;           • Навыки: &lt;b&gt;Java, Spring, Hibernate&lt;/b&gt;&lt;br&gt;           • Образование: &lt;b&gt;МГУ, 2018&lt;/b&gt;&lt;br&gt;&lt;br&gt;           &lt;button&gt;Скачать резюме (PDF)&lt;/button&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;" parent="resume" vertex="1">
+          <mxGeometry x="200" y="80" width="600" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="resume_tabs" value="&lt;div style=&#39;padding:10px;background:#f8f9fa;text-align:center&#39;&gt;           &lt;button style=&#39;margin:0 5px&#39;&gt;Опыт работы&lt;/button&gt;           &lt;button style=&#39;margin:0 5px&#39;&gt;Образование&lt;/button&gt;           &lt;button style=&#39;margin:0 5px&#39;&gt;Навыки&lt;/button&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=#ddd;fillColor=#f8f9fa;align=center;verticalAlign=middle;" parent="resume" vertex="1">
+          <mxGeometry y="280" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="resume_content" value="&lt;div style=&#39;padding:20px;height:100%&#39;&gt;           &lt;b&gt;Опыт работы:&lt;/b&gt;&lt;br&gt;&lt;br&gt;           &lt;b&gt;Senior Java Developer&lt;/b&gt;, Яндекс (2020-н.в.)&lt;br&gt;           - Разработка микросервисов&lt;br&gt;           - Оптимизация производительности&lt;br&gt;&lt;br&gt;           &lt;b&gt;Java Developer&lt;/b&gt;, Сбер (2018-2020)           &lt;/div&gt;" style="shape=rect;strokeColor=#ddd;fillColor=#ffffff;align=left;verticalAlign=top;" parent="resume" vertex="1">
+          <mxGeometry y="330" width="800" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="resume_actions" value="&lt;div style=&#39;padding:15px;text-align:center&#39;&gt;           &lt;button style=&#39;margin-right:15px;background:#28a745;color:white&#39;&gt;Анализировать резюме&lt;/button&gt;           &lt;button style=&#39;background:#007bff;color:white&#39;&gt;Назначить собеседование&lt;/button&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f8f9fa;align=center;verticalAlign=middle;" parent="resume" vertex="1">
+          <mxGeometry y="520" width="800" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis" value="" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="1410" width="800" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis_header" value="&lt;div style=&quot;font-size:16px;padding:10px&quot;&gt;&lt;b&gt;Анализ резюме: Иван Петров&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" parent="analysis" vertex="1">
+          <mxGeometry y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis_progress" value="&lt;div style=&#39;padding:20px&#39;&gt;           &lt;b&gt;Соответствие вакансии: 85%&lt;/b&gt;&lt;br&gt;           &lt;div style=&#39;width:100%;height:20px;background:#e9ecef;margin-top:10px&#39;&gt;           &lt;div style=&#39;width:85%;height:100%;background:#28a745&#39;&gt;&lt;/div&gt;           &lt;/div&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" parent="analysis" vertex="1">
+          <mxGeometry y="80" width="800" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis_content" value="&lt;div style=&#39;padding:20px&#39;&gt;           &lt;div style=&#39;margin-bottom:20px&#39;&gt;           &lt;b&gt;Сильные стороны:&lt;/b&gt;&lt;br&gt;           - 5+ лет коммерческого опыта с Java 8+&lt;br&gt;           - Отличное знание Spring Framework (Boot, MVC, Security)&lt;br&gt;           - Опыт работы с микросервисной архитектурой           &lt;/div&gt;                      &lt;div style=&#39;margin-bottom:20px&#39;&gt;           &lt;b&gt;Слабые стороны:&lt;/b&gt;&lt;br&gt;           - Нет production-опыта с Kubernetes&lt;br&gt;           - Ограниченный опыт с NoSQL (только MongoDB)           &lt;/div&gt;                      &lt;div&gt;           &lt;b&gt;Рекомендации:&lt;/b&gt;&lt;br&gt;           - Пригласить на техническое собеседование&lt;br&gt;           - Проверить знание Docker и облачных платформ&lt;br&gt;           - Уточнить опыт работы с Kafka           &lt;/div&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=top;" parent="analysis" vertex="1">
+          <mxGeometry y="160" width="800" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="analysis_actions" value="&lt;div style=&#39;padding:15px;text-align:center&#39;&gt;           &lt;button style=&#39;margin-right:15px&#39;&gt;Сохранить отчёт&lt;/button&gt;           &lt;button style=&#39;background:#6c757d;color:white&#39;&gt;Экспорт в PDF&lt;/button&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f8f9fa;align=center;verticalAlign=middle;" parent="analysis" vertex="1">
+          <mxGeometry y="510" width="800" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vacancy" value="" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="-810" y="100" width="800" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="vacancy_header" value="&lt;div style=&quot;font-size:16px;padding:10px&quot;&gt;&lt;b&gt;Создание новой вакансии&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" parent="vacancy" vertex="1">
+          <mxGeometry y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vacancy_form" value="&lt;div style=&#39;padding:20px&#39;&gt;           &lt;div style=&#39;margin-bottom:15px&#39;&gt;           &lt;b&gt;Должность:&lt;/b&gt;&lt;br&gt;           &lt;input type=&#39;text&#39; value=&#39;Senior Java Developer&#39; style=&#39;width:100%;padding:8px;border:1px solid #ddd&#39;&gt;           &lt;/div&gt;                      &lt;div style=&#39;margin-bottom:15px&#39;&gt;           &lt;b&gt;Отдел:&lt;/b&gt;&lt;br&gt;           &lt;select style=&#39;width:100%;padding:8px;border:1px solid #ddd&#39;&gt;           &lt;option&gt;Разработка&lt;/option&gt;           &lt;option&gt;Тестирование&lt;/option&gt;           &lt;option&gt;Аналитика&lt;/option&gt;           &lt;/select&gt;           &lt;/div&gt;                      &lt;div style=&#39;margin-bottom:15px&#39;&gt;           &lt;b&gt;Описание:&lt;/b&gt;&lt;br&gt;           &lt;textarea style=&#39;width:100%;height:100px;padding:8px;border:1px solid #ddd&#39;&gt;Требуется опытный Java-разработчик для работы над высоконагруженным сервисом...&lt;/textarea&gt;           &lt;/div&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=top;" parent="vacancy" vertex="1">
+          <mxGeometry y="80" width="800" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="vacancy_req" value="&lt;div style=&#39;padding:20px;background:#f8f9fa&#39;&gt;           &lt;b&gt;Требования:&lt;/b&gt;&lt;br&gt;&lt;br&gt;           &lt;div style=&#39;margin-bottom:10px&#39;&gt;           1. &lt;input type=&#39;text&#39; value=&#39;Java&#39; style=&#39;width:150px;padding:5px;border:1px solid #ddd&#39;&gt;           Уровень: &lt;select style=&#39;padding:5px;border:1px solid #ddd&#39;&gt;           &lt;option&gt;Junior&lt;/option&gt;           &lt;option selected&gt;Middle&lt;/option&gt;           &lt;option&gt;Senior&lt;/option&gt;           &lt;/select&gt;           &lt;/div&gt;                      &lt;button style=&#39;margin-top:10px&#39;&gt;+ Добавить требование&lt;/button&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=#ddd;fillColor=#f8f9fa;align=left;verticalAlign=top;" parent="vacancy" vertex="1">
+          <mxGeometry y="330" width="800" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="vacancy_actions" value="&lt;div style=&#39;padding:15px;text-align:center&#39;&gt;           &lt;button style=&#39;margin-right:15px;background:#28a745;color:white&#39;&gt;Сохранить вакансию&lt;/button&gt;           &lt;button style=&#39;background:#dc3545;color:white&#39;&gt;Отменить&lt;/button&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f8f9fa;align=center;verticalAlign=middle;" parent="vacancy" vertex="1">
+          <mxGeometry y="500" width="800" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard" value="" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="100" width="800" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard_header" value="&lt;div style=&quot;font-size:16px;padding:10px&quot;&gt;&lt;b&gt;Дашборд HR-аналитики&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" parent="dashboard" vertex="1">
+          <mxGeometry y="30" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard_stats" value="&lt;div style=&#39;padding:20px&#39;&gt;           &lt;b&gt;Ключевые метрики:&lt;/b&gt;&lt;br&gt;&lt;br&gt;           &lt;div style=&#39;display:flex;justify-content:space-between&#39;&gt;           &lt;div style=&#39;text-align:center;padding:15px;background:#fff;border:1px solid #ddd;border-radius:5px;width:30%&#39;&gt;           &lt;div style=&#39;font-size:24px&#39;&gt;124&lt;/div&gt;           &lt;div&gt;Всего кандидатов&lt;/div&gt;           &lt;/div&gt;                      &lt;div style=&#39;text-align:center;padding:15px;background:#fff;border:1px solid #ddd;border-radius:5px;width:30%&#39;&gt;           &lt;div style=&#39;font-size:24px&#39;&gt;12&lt;/div&gt;           &lt;div&gt;Новых за неделю&lt;/div&gt;           &lt;/div&gt;                      &lt;div style=&#39;text-align:center;padding:15px;background:#fff;border:1px solid #ddd;border-radius:5px;width:30%&#39;&gt;           &lt;div style=&#39;font-size:24px&#39;&gt;5&lt;/div&gt;           &lt;div&gt;Активных вакансий&lt;/div&gt;           &lt;/div&gt;           &lt;/div&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;" parent="dashboard" vertex="1">
+          <mxGeometry y="80" width="800" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard_chart" value="&lt;div style=&#39;padding:20px;text-align:center;height:100%&#39;&gt;           [ График статистики найма по месяцам ]           &lt;/div&gt;" style="shape=rect;strokeColor=#ddd;fillColor=#ffffff;align=center;verticalAlign=middle;" parent="dashboard" vertex="1">
+          <mxGeometry y="230" width="800" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard_activity" value="&lt;div style=&#39;padding:20px&#39;&gt;           &lt;b&gt;Последние действия:&lt;/b&gt;&lt;br&gt;&lt;br&gt;           &lt;div style=&#39;padding:5px 0;border-bottom:1px solid #eee&#39;&gt;&lt;b&gt;12.05&lt;/b&gt; - Анализ резюме Петрова И. (85%)&lt;/div&gt;           &lt;div style=&#39;padding:5px 0;border-bottom:1px solid #eee&#39;&gt;&lt;b&gt;11.05&lt;/b&gt; - Добавлена вакансия Frontend Engineer&lt;/div&gt;           &lt;div style=&#39;padding:5px 0;border-bottom:1px solid #eee&#39;&gt;&lt;b&gt;10.05&lt;/b&gt; - Назначено собеседование с Сидоровой А.&lt;/div&gt;           &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=top;" parent="dashboard" vertex="1">
+          <mxGeometry y="430" width="800" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-17" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="2080" y="910" width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-36" value="" style="group" vertex="1" connectable="0" parent="H_eYOqh9Jjy3H0xAP_7i-17">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-14" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-36">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-15" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-36">
+          <mxGeometry x="20" y="10" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-16" value="&lt;div&gt;УВЕДОМЛЕНИЕ:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;AI не смог выполнить анализ резюме, проведите анализ резюме вручную" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-36">
+          <mxGeometry x="100" y="30" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-33" value="ОК" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-36">
+          <mxGeometry x="160" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-18" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="2100" y="1140" width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-37" value="" style="group" vertex="1" connectable="0" parent="H_eYOqh9Jjy3H0xAP_7i-18">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-19" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-37">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-20" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-37">
+          <mxGeometry x="20" y="10" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-21" value="&lt;div&gt;ОШИБКА:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;СИСТЕМА НЕ ДОСТУПНА" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-37">
+          <mxGeometry x="100" y="30" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-32" value="Выход" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-37">
+          <mxGeometry x="170" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-22" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="2120" y="1370" width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-40" value="" style="group" vertex="1" connectable="0" parent="H_eYOqh9Jjy3H0xAP_7i-22">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-23" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-40">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-24" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-40">
+          <mxGeometry x="20" y="10" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-25" value="&lt;div&gt;ОШИБКА:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;БАЗА ДАННЫХ НЕ ДОСТУПНА&lt;div&gt;&lt;br&gt;&lt;div&gt;ПОВТОРИТЕ ПОЖАЛУЙСТА ЗАПРОС ПОЗДНЕЕ&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-40">
+          <mxGeometry x="100" y="30" width="290" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-31" value="Выход" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-40">
+          <mxGeometry x="185" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-26" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="2080" y="1594" width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-42" value="" style="group" vertex="1" connectable="0" parent="H_eYOqh9Jjy3H0xAP_7i-26">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-27" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-42">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-28" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-42">
+          <mxGeometry x="20" y="10" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-29" value="&lt;div&gt;УВЕДОМЛЕНИЕ:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Вы не ввели критерии, система будет использовать критерии поиска по умолчанию&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-42">
+          <mxGeometry x="100" y="30" width="290" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-30" value="ОК" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-42">
+          <mxGeometry x="190" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-35" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="2068" y="670" width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-43" value="" style="group" vertex="1" connectable="0" parent="H_eYOqh9Jjy3H0xAP_7i-35">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-8" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-43">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-9" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-43">
+          <mxGeometry x="20" y="10" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-13" value="&lt;div&gt;УВЕДОМЛЕНИЕ:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Подходящие кандидаты отсутствуют" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-43">
+          <mxGeometry x="100" y="30" width="260" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-34" value="ОК" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-43">
+          <mxGeometry x="160" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-50" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="2090" y="1860" width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-46" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-50">
+          <mxGeometry width="410" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-47" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-50">
+          <mxGeometry x="20" y="10" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-48" value="&lt;div&gt;УВЕДОМЛЕНИЕ:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Анализ резюме завершен.&amp;nbsp;&lt;div&gt;Вы можете посмотреть результат&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-50">
+          <mxGeometry x="100" y="30" width="290" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="H_eYOqh9Jjy3H0xAP_7i-49" value="ОК" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="H_eYOqh9Jjy3H0xAP_7i-50">
+          <mxGeometry x="190" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
