@@ -53,7 +53,7 @@ ______________________________________________________
 
 ## BPMN-диаграмма
 
-![ BPMN](SAMPLE/05_BPMN_AIDE_HR.png)
+![ BPMN](05_BPMN_AIDE_HR.png)
 
 ______________________________________________________
 
@@ -308,15 +308,15 @@ _____________________________________________________
 
 # SWAGGER
 
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_01.png)
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_02.png)
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_03.png)
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_04.png)
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_05.png)
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_06.png)
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_07.png)
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_08.png)
-![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_09.png)
+![ SWAGGER ](swagger/12_Swagger_HR_01.png)
+![ SWAGGER ](swagger/12_Swagger_HR_02.png)
+![ SWAGGER ](swagger/12_Swagger_HR_03.png)
+![ SWAGGER ](swagger/12_Swagger_HR_04.png)
+![ SWAGGER ](swagger/12_Swagger_HR_05.png)
+![ SWAGGER ](swagger/12_Swagger_HR_06.png)
+![ SWAGGER ](swagger/12_Swagger_HR_07.png)
+![ SWAGGER ](swagger/12_Swagger_HR_08.png)
+![ SWAGGER ](swagger/12_Swagger_HR_09.png)
 _______________________________________________________
 
 # Функциональные требования и критерии приемки для HR Resume Screener
