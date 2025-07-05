@@ -65,19 +65,20 @@ ___________________________________________________
  | 11е | Если AI не может проанализировать резюме, система уведомляет HR-специалиста о необходимости ручного анализа. (МАКЕТ 11е)| 
  | 13e | Если произошла ошибка при сохранении результатов, система уведомляет HR-специалиста и предлагает повторить сохранение. (МАКЕТ 13е)|
 <br>
-Ссылка на артефакт: [Use Case](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/02_UseCase.md/)
+Ссылка на артефакт: [Use Case](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/02_UseCase.md/) <br>
+
 ______________________________________________________
 # Макеты
 
 ![Макеты](SAMPLE/pictures/03_Maket_01_HR.png)  <br> 
 
 Ссылка на артефакт: [Макеты.drawio](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/03_Maket_01_HR.drawio/)  <br> 
-Ссылка на программное обеспечение: [Draw.io](https://www.drawio.com/)
+Ссылка на программное обеспечение: [Draw.io](https://www.drawio.com/)  <br>
 ___________________________________________________
 
 ## BPMN-диаграмма
 
-![BPMN](SAMPLE/pictures/05_BPMN_01_HR.png)
+![BPMN](SAMPLE/pictures/05_BPMN_01_HR.png)  <br>
 Ссылка на артефакт: [BPMN](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/05_BPMN_01_HR.bpmn/)<br>
 Ссылка на программное обеспечение: [Cammunda](https://modeler.camunda.io/)<br>
 
@@ -197,7 +198,7 @@ _____________________________________________________
 ![Sequence](SAMPLE/pictures/09_sequence_plantUML.png) <br>
 Ссылка на артефакт: [Sequence.svg](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/09_Sequense.svg/)<br>
 Ссылка на программное обеспечение: <br>
-[PlantUML](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700001/)  <br>  
+[PlantUML](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700001/)<br>  
 [Нотация PlantUML](https://plantuml.com/ru/starting/)<br>
 _____________________________________________________
 
