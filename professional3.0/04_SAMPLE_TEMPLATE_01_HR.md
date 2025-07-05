@@ -10,7 +10,7 @@
 ___________________________________________________
 # Макеты
 
-![Макеты](pictures/05_BPMN_01_HR.png)  <br> 
+![Макеты](SAMPLE/pictures/05_BPMN_01_HR.png)  <br> 
 
 Ссылка на артефакт: [Макеты.drawio](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/02_Maket_01_HR.drawio/)  <br> 
 Ссылка на программное обеспечение: [Draw.io](https://www.drawio.com/)
@@ -76,14 +76,14 @@ ______________________________________________________
 
 ## BPMN-диаграмма
 <br>
-![BPMN](pictures/02_Maket_01_HR.png)<br>
+![BPMN](SAMPLE/pictures/02_Maket_01_HR.png)<br>
 Ссылка на артефакт: [BPMN](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/05_BPMN_01_HR.bpmn/)<br>
 Ссылка на программное обеспечение: [Cammunda](https://modeler.camunda.io/)<br>
 
 _____________________________________________________
 # Архитектура
 <br>
-![Архитектура](pictures/06_Arch_01_HR.png)<br>
+![Архитектура](SAMPLE/pictures/06_Arch_01_HR.png)<br>
 Ссылка на артефакт: - [Архитектура в Draw.io](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/06_Arch_01_HR.drawio) <br>
 Ссылка на программное обеспечение: -  [Draw.io](https://www.drawio.com/)<br>
 
@@ -185,7 +185,7 @@ ______________________________________________________
 _____________________________________________________
 # ERD диаграмма
 
-![ERD(DBeaver)](pictures/08_ERD_DBeaver.png)
+![ERD(DBeaver)](SAMPLE/pictures/08_ERD_DBeaver.png)
 Ссылка на артефакт: [ERD(DBeaver)](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/08_ERD.md/)
 Ссылка на артефакт: [SQL запрос на создание БД](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/08_ERD_SQL.sql/)
 Ссылка на программное обеспечение: <br> [Cammunda](https://modeler.camunda.io/) <br>  [pgAdmin 4](https://www.pgadmin.org/download/)
@@ -357,15 +357,15 @@ _____________________________________________________
 
 # SWAGGER
 
-![ SWAGGER ](swagger/12_Swagger_HR_01.png)<br>
-![ SWAGGER ](swagger/12_Swagger_HR_02.png)<br>
-![ SWAGGER ](swagger/12_Swagger_HR_03.png)<br>
-![ SWAGGER ](swagger/12_Swagger_HR_04.png)<br>
-![ SWAGGER ](swagger/12_Swagger_HR_05.png)<br>
-![ SWAGGER ](swagger/12_Swagger_HR_06.png)<br>
-![ SWAGGER ](swagger/12_Swagger_HR_07.png)<br>
-![ SWAGGER ](swagger/12_Swagger_HR_08.png)<br>
-![ SWAGGER ](swagger/12_Swagger_HR_09.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_01.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_02.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_03.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_04.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_05.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_06.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_07.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_08.png)<br>
+![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_09.png)<br>
 <br>
 Ссылка на артефакт: [Swagger.yaml](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/11_swagger.yaml/)<br>
 Ссылка на программное обеспечение: [Swagger Editor](https://editor.swagger.io/)<br>
