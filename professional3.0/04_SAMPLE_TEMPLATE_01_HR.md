@@ -182,21 +182,23 @@ ______________________________________________________
 |                       | analyzed_at   | Дата и время проведения анализа     |
 
 
-Ссылка на артефакт [Модель данных](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/07_Data_model.md)
+Ссылка на артефакт [Модель данных](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/07_Data_model.md) <br>
+
 _____________________________________________________
 # ERD диаграмма
 
-![ERD(DBeaver)](SAMPLE/pictures/08_ERD_DBeaver.png)
-Ссылка на артефакт: [ERD(DBeaver)](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/08_ERD.md/)
-Ссылка на артефакт: [SQL запрос на создание БД](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/08_ERD_SQL.sql/)
-Ссылка на программное обеспечение: <br> [Cammunda](https://modeler.camunda.io/) <br>  [pgAdmin 4](https://www.pgadmin.org/download/)
+![ERD(DBeaver)](SAMPLE/pictures/08_ERD_DBeaver.png) <br>
+Ссылка на артефакт: [ERD(DBeaver)](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/08_ERD.md/) <br>
+Ссылка на артефакт: [SQL запрос на создание БД](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/08_ERD_SQL.sql/) <br>
+Ссылка на программное обеспечение: <br> [Cammunda](https://modeler.camunda.io/) <br>  [pgAdmin 4](https://www.pgadmin.org/download/) <br>
 _____________________________________________________
 # Sequence
-<br>
-![Sequence](pictures/09_sequence_plantUML.png)
-<br>
+
+![Sequence](SAMPLE/pictures/09_sequence_plantUML.png) <br>
 Ссылка на артефакт: [Sequence.svg](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/09_Sequense.svg/)<br>
-Ссылка на программное обеспечение: [PlantUML](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700001/)  <br>  [Нотация PlantUML](https://plantuml.com/ru/starting/)<br>
+Ссылка на программное обеспечение: <br>
+[PlantUML](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700001/)  <br>  
+[Нотация PlantUML](https://plantuml.com/ru/starting/)<br>
 _____________________________________________________
 
 # REST API Спецификация для HR Resume Screener
@@ -367,7 +369,7 @@ _____________________________________________________
 ![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_07.png)<br>
 ![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_08.png)<br>
 ![ SWAGGER ](SAMPLE/swagger/12_Swagger_HR_09.png)<br>
-<br>
+
 Ссылка на артефакт: [Swagger.yaml](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/11_swagger.yaml/)<br>
 Ссылка на программное обеспечение: [Swagger Editor](https://editor.swagger.io/)<br>
 _______________________________________________________
