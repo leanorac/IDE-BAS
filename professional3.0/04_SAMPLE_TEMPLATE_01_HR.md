@@ -6,7 +6,8 @@
 
 ## Описание проекта
 Анализирует резюме кандидатов и отбирает наиболее подходящие для вакансии.
-Ссылка на артефакт [UserStory](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/01_UserStory.md)
+Ссылка на артефакт: <br>
+- [UserStory](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/01_UserStory.md)
 ___________________________________________________
 # Макеты
 
@@ -84,8 +85,8 @@ _____________________________________________________
 # Архитектура
 <br>
 ![Архитектура](pictures/06_Arch_01_HR.png)<br>
-Ссылка на артефакт [Архитектура в Draw.io]([https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/05_BPMN_01_HR.bpmn](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/06_Arch_01_HR.drawio))<br>
-Ссылка на программное обеспечение [Draw.io](https://www.drawio.com/)<br>
+Ссылка на артефакт: - [Архитектура в Draw.io](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/06_Arch_01_HR.drawio) <br>
+Ссылка на программное обеспечение: -  [Draw.io](https://www.drawio.com/)<br>
 
 ______________________________________________________
 
