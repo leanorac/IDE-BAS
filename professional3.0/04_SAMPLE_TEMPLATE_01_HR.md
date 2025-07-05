@@ -7,7 +7,7 @@
 ## Описание проекта
 Анализирует резюме кандидатов и отбирает наиболее подходящие для вакансии.
 Ссылка на артефакт: <br>
-- [UserStory](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/01_UserStory.md)
+- [UserStory](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/01_UserStory.md/)
 ___________________________________________________
 # Макеты
 
