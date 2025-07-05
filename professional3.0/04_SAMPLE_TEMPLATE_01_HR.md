@@ -9,8 +9,10 @@
 Ссылка на артефакт [UserStory](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/01_UserStory.md)
 ___________________________________________________
 # Макеты
-![Макеты](05_BPMN_AIDE_HR.png)
-Ссылка на артефакт [Макеты в Draw.io](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/02_Maket_01_HR.drawio)
+
+![Макеты](pictures/05_BPMN_AIDE_HR.png)  <br> 
+
+Ссылка на артефакт [Макеты.drawio](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/02_Maket_01_HR.drawio)  <br> 
 Ссылка на программное обеспечение [Draw.io](https://www.drawio.com/)
 ___________________________________________________
 # Use Case: Автоматический отбор резюме
@@ -68,22 +70,22 @@ ___________________________________________________
  | 8e | Если произошла ошибка при запросе к базе данных, система уведомляет HR-специалиста и предлагает повторить запрос. (МАКЕТ 8е)|
  | 11е | Если AI не может проанализировать резюме, система уведомляет HR-специалиста о необходимости ручного анализа. (МАКЕТ 11е)| 
  | 13e | Если произошла ошибка при сохранении результатов, система уведомляет HR-специалиста и предлагает повторить сохранение. (МАКЕТ 13е)|
-
+<br>
 Ссылка на артефакт [Use Case](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/03_UseCase.md)
 ______________________________________________________
 
 ## BPMN-диаграмма
-
-![ BPMN](pictures/02_Maket_01_HR.png)
-Ссылка на артефакт [BPMN](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/05_BPMN_01_HR.bpmn)
-Ссылка на программное обеспечение [Cammunda](https://modeler.camunda.io/)
+<br>
+![BPMN](pictures/02_Maket_01_HR.png)<br>
+Ссылка на артефакт [BPMN](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/05_BPMN_01_HR.bpmn)<br>
+Ссылка на программное обеспечение [Cammunda](https://modeler.camunda.io/)<br>
 
 _____________________________________________________
 # Архитектура
-
-![Архитектура](pictures/06_Arch_01_HR.png)
-Ссылка на артефакт [Архитектура в Draw.io]([https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/05_BPMN_01_HR.bpmn](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/06_Arch_01_HR.drawio))
-Ссылка на программное обеспечение [Draw.io](https://www.drawio.com/)
+<br>
+![Архитектура](pictures/06_Arch_01_HR.png)<br>
+Ссылка на артефакт [Архитектура в Draw.io]([https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/05_BPMN_01_HR.bpmn](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/06_Arch_01_HR.drawio))<br>
+Ссылка на программное обеспечение [Draw.io](https://www.drawio.com/)<br>
 
 ______________________________________________________
 
@@ -189,11 +191,11 @@ _____________________________________________________
 Ссылка на программное обеспечение: <br> [Cammunda](https://modeler.camunda.io/) <br>  [pgAdmin 4](https://www.pgadmin.org/download/)
 _____________________________________________________
 # Sequence
-
+<br>
 ![Sequence](pictures/09_sequence_plantUML.png)
-
-Ссылка на артефакт [Sequence.svg](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/09_Sequense.svg)
-Ссылка на программное обеспечение: [PlantUML](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700001)  <br>  [Нотация PlantUML](https://plantuml.com/ru/starting)
+<br>
+Ссылка на артефакт [Sequence.svg](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/09_Sequense.svg)<br>
+Ссылка на программное обеспечение: [PlantUML](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700001)  <br>  [Нотация PlantUML](https://plantuml.com/ru/starting)<br>
 _____________________________________________________
 
 # REST API Спецификация для HR Resume Screener
@@ -349,23 +351,24 @@ _____________________________________________________
 | `candidates` | array[object] | body | Подходящие кандидаты | Да |
 | `candidates[].candidate_id` | integer | body | ID кандидата | Да |
 | `candidates[].match_percentage` | float | body | Процент соответствия | Да |
-
+<br>
+Ссылка на артефакт [REST_API](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/10_REST_API.md)<br>
 _____________________________________________________
 
 # SWAGGER
 
-![ SWAGGER ](swagger/12_Swagger_HR_01.png)
-![ SWAGGER ](swagger/12_Swagger_HR_02.png)
-![ SWAGGER ](swagger/12_Swagger_HR_03.png)
-![ SWAGGER ](swagger/12_Swagger_HR_04.png)
-![ SWAGGER ](swagger/12_Swagger_HR_05.png)
-![ SWAGGER ](swagger/12_Swagger_HR_06.png)
-![ SWAGGER ](swagger/12_Swagger_HR_07.png)
-![ SWAGGER ](swagger/12_Swagger_HR_08.png)
-![ SWAGGER ](swagger/12_Swagger_HR_09.png)
-
-Ссылка на артефакт [Swagger.yaml](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/11_swagger.yaml)
-Ссылка на программное обеспечение [Swagger Editor](https://editor.swagger.io/)
+![ SWAGGER ](swagger/12_Swagger_HR_01.png)<br>
+![ SWAGGER ](swagger/12_Swagger_HR_02.png)<br>
+![ SWAGGER ](swagger/12_Swagger_HR_03.png)<br>
+![ SWAGGER ](swagger/12_Swagger_HR_04.png)<br>
+![ SWAGGER ](swagger/12_Swagger_HR_05.png)<br>
+![ SWAGGER ](swagger/12_Swagger_HR_06.png)<br>
+![ SWAGGER ](swagger/12_Swagger_HR_07.png)<br>
+![ SWAGGER ](swagger/12_Swagger_HR_08.png)<br>
+![ SWAGGER ](swagger/12_Swagger_HR_09.png)<br>
+<br>
+Ссылка на артефакт [Swagger.yaml](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/11_swagger.yaml)<br>
+Ссылка на программное обеспечение [Swagger Editor](https://editor.swagger.io/)<br>
 _______________________________________________________
 
 # Функциональные требования и критерии приемки для HR Resume Screener
