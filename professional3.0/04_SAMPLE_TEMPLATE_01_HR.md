@@ -8,13 +8,7 @@
 Анализирует резюме кандидатов и отбирает наиболее подходящие для вакансии.
 Ссылка на артефакт: [UserStory](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/01_UserStory.md/)
 ___________________________________________________
-# Макеты
 
-![Макеты](SAMPLE/pictures/05_BPMN_01_HR.png)  <br> 
-
-Ссылка на артефакт: [Макеты.drawio](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/02_Maket_01_HR.drawio/)  <br> 
-Ссылка на программное обеспечение: [Draw.io](https://www.drawio.com/)
-___________________________________________________
 # Use Case: Автоматический отбор резюме
 
 ## Основная информация
@@ -71,21 +65,28 @@ ___________________________________________________
  | 11е | Если AI не может проанализировать резюме, система уведомляет HR-специалиста о необходимости ручного анализа. (МАКЕТ 11е)| 
  | 13e | Если произошла ошибка при сохранении результатов, система уведомляет HR-специалиста и предлагает повторить сохранение. (МАКЕТ 13е)|
 <br>
-Ссылка на артефакт: [Use Case](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/03_UseCase.md/)
+Ссылка на артефакт: [Use Case](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/02_UseCase.md/)
 ______________________________________________________
+# Макеты
+
+![Макеты](SAMPLE/pictures/03_Maket_01_HR.png)  <br> 
+
+Ссылка на артефакт: [Макеты.drawio](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/03_Maket_01_HR.drawio/)  <br> 
+Ссылка на программное обеспечение: [Draw.io](https://www.drawio.com/)
+___________________________________________________
 
 ## BPMN-диаграмма
-<br>
-![BPMN](SAMPLE/pictures/02_Maket_01_HR.png)<br>
+
+![BPMN](SAMPLE/pictures/05_BPMN_01_HR.png)
 Ссылка на артефакт: [BPMN](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/05_BPMN_01_HR.bpmn/)<br>
 Ссылка на программное обеспечение: [Cammunda](https://modeler.camunda.io/)<br>
 
 _____________________________________________________
 # Архитектура
-<br>
+
 ![Архитектура](SAMPLE/pictures/06_Arch_01_HR.png)<br>
-Ссылка на артефакт: - [Архитектура в Draw.io](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/06_Arch_01_HR.drawio) <br>
-Ссылка на программное обеспечение: -  [Draw.io](https://www.drawio.com/)<br>
+Ссылка на артефакт:  [Архитектура в Draw.io](https://github.com/leanorac/IDE-BAS/blob/main/professional3.0/SAMPLE/06_Arch_01_HR.drawio) <br>
+Ссылка на программное обеспечение:  [Draw.io](https://www.drawio.com/)<br>
 
 ______________________________________________________
 
